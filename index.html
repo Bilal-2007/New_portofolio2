@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilal Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Bilal<span>DEV</span></div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projek">Projects</a>
+      <a href="#Contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div data-aos="fade-right" data-aos-duration="900" class="hero-content">
+      <h1>Hi, I'm <span>Bilal Surya</span><br>Web Developer</h1>
+      <p>
+        I create immersive digital experiences with cutting-edge web technologies.
+        My passion is turning ideas into interactive realities that captivate users.
+      </p>
+
+      <a href="#Contact" class="cta-button">Get In Touch</a>
+      <a href="cv-bilal.pdf" download class="cta-button download-btn">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+
+      <!-- Tombol musik -->
+      <audio id="bg-music">
+        <source src="src/lagu.mp3" type="audio/mp3" />
+      </audio>
+      <button class="music-button" onclick="document.getElementById('bg-music').play()">▶️ Play My Music</button>
+    </div>
+
+    <div data-aos="fade-up" class="profile-container">
+      <div class="profile-border"></div>
+      <div class="tech-icons">
+        <i class="tech-icon" style="top: 0; left: 50%; transform: translateX(-50%);">⚙️</i>
+        <i class="tech-icon" style="top: 60%; right: 0; transform: translateX(-50%);">💻</i>
+        <i class="tech-icon" style="bottom: 0; left: 50%; transform: translateX(-50%);">📱</i>
+        <i class="tech-icon" style="top: 50%; left: 0; transform: translateX(-50%);">🌐</i>
+      </div>
+      <img src="src/1.jpeg" alt="Profile Picture" width="300px" class="profile-pic" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <section data-aos="zoom-in-right" class="about-section">
+      <div class="about-card">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I’m a passionate beginner in web development who loves learning new things about technology. My journey
+              started from curiosity—exploring how websites work and creating simple projects using HTML, CSS,
+              JavaScript
+              and others</p>
+            <p>I enjoy turning ideas into real applications and always excited to explore frameworks like Laravel and
+              React. Even though I’m still learning, I believe every small step is progress..</p>
+            <p>Right now, I’m focused on building useful and responsive websites, while slowly understanding both
+              frontend and backend development. I love discovering new tools, joining communities, and improving my
+              skills every day.</p>
+          </div>
+          <div class="skills">
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>JavaScript</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>React</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Node.js</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>UI/UX Design</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projek" class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div data-aos="zoom-out-right" class="project">
+        <img src="src/projek1.png" alt="Aplikasi Kasir Laravel">
+        <h3>Aplikasi Kasir Laravel</h3>
+        <p>Sebuah aplikasi kasir sederhana berbasis web yang dibangun menggunakan Laravel, dilengkapi fitur transaksi,
+          laporan, dan manajemen produk.</p>
+        <div class="tech-tags">
+          <span>Laravel</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="links">
+          <a href="#" class="demo"><i class="fas fa-eye"></i> Live Demo</a>
+          <a href="https://github.com/Bilal-2007/Kasir-laravel.git" target="_blank" class="code"><i
+              class="fas fa-code"></i> GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div data-aos="fade-up" data-aos-duration="1000" class="project">
+        <img src="src/projek2.png" alt="Absensi-online">
+        <h3>Asensi-online</h3>
+        <p>Aplikasi absensi berbasis web yang memudahkan pencatatan kehadiran secara digital dan real-time, sebagai
+          solusi dari sistem manual yang lambat dan rawan kehilangan data.</p>
+        <div class="tech-tags">
+          <span>Laravel</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>JSON</span>
+        </div>
+        <div class="links">
+          <a href="#" class="demo"><i class="fas fa-eye"></i> Live Demo</a>
+          <a href="https://github.com/Bilal-2007/absensi-online.git" target="_blank" class="code"><i
+              class="fas fa-code"></i> GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div data-aos="zoom-out-left" class="project">
+        <img src="src/projek3.png" alt="Portfolio1">
+        <h3>Portfolio1</h3>
+        <p>Sebuah Portfolio sederhana yang berfungsi untuk data diri saya namun saya merasa itu kurang bagus dan
+          sekarang saya membuat yang baru </p>
+        <div class="tech-tags">
+          <span>Html</span>
+          <span>css</span>
+        </div>
+        <div class="links">
+          <a href="#" class="demo"><i class="fas fa-eye"></i> Live Demo</a>
+          <a href="" target="_blank" class="code"><i class="fas fa-code"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section data-aos="zoom-in-down" id="Contact" class="contact-section">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-desc">Let’s create something amazing together. Reach out anytime!</p>
+
+    <div class="contact-container">
+      <!-- Contact Info -->
+      <div class="contact-info" style="margin-bottom: 55px;">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-envelope"></i> bilalabdillah184@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +62 852-4810-0354</p>
+        <p><i class="fas fa-map-marker-alt"></i> Indonesia</p>
+      </div>
+
+      <!-- FORM -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
